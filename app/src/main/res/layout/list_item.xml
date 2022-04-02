@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <data>
+                <variable
+                    name="country"
+                    type="com.myapp.model.room.Country" />
+                
+                <variable
+                    name="viewModel"
+                    type="com.myapp.viewmodel.CountryViewModel" />
+        </data>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> viewModel.delete(country)}">
+
+                <TextView
+                    android:id="@+id/tv_country"
+                    android:text="@{country.name}"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:padding="20dp" />
+
+        </LinearLayout>
+</layout>

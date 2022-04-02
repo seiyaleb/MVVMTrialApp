@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">行きたい国メモ</string>
+    <string name="et_label">国名</string>
+    <string name="btn_insert">追加</string>
+    <string name="snackbar">追加しました。</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
